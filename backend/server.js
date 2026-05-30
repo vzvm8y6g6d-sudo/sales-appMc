@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // Ruta básica
-defaultEndpoint = () => "Bienvenido a la Aplicación de Ventas";
+defaultEndpoint = () => "Welcome Sales";
 app.get('/', (_, res) => res.send(defaultEndpoint()));
 
 app.listen(port, () => {
