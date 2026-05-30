@@ -1,11 +1,44 @@
-<!-- frontend/index.html - Archivo básico para el cliente -->
+<!-- frontend/index.html - Archivo básico para el cliente con Animaciones -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>App de Ventas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #4CAF50;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a la App de Ventas</h1>
+  <h1>Welcome</h1>
   <p>¡Pronto estará lista para usar!</p>
 </body>
 </html>
